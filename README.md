@@ -1,2 +1,2 @@
 # mtbc
-Micro Train Bootcamp
+dev immersion - Mondays, be there or be square
