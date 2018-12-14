@@ -1,3 +1,25 @@
+/* mixins */
+/* clear floats */
+/* Utility classes */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* Rows and columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.col {
+  float: left;
+  width: 25%;
+  padding: .5rem;
+  /* debug */
+  border: 1px solid #990000;
+  background: #fff; }
+
 /* variables */
 /* universal settings */
 * {
@@ -10,6 +32,31 @@ body {
   padding: 0;
   width: 1170px; }
 
-/* here is a comment for the sake of making a change */
+.text-success {
+  color: #3c763d; }
+
+.text-error {
+  color: #8a6d3b; }
+
+.text-warning {
+  color: #a94442; }
+
+.message, .success, .error, .warning {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  color: #333; }
+
+.success {
+  border-color: #3c763d;
+  color: #3c763d; }
+
+.error {
+  border-color: #8a6d3b;
+  color: #8a6d3b; }
+
+.warning {
+  border-color: #a94442;
+  color: #a94442; }
 
 /*# sourceMappingURL=main.css.map */
