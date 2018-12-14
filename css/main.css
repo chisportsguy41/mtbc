@@ -1,0 +1,15 @@
+/* variables */
+/* universal settings */
+* {
+  box-sizing: border-box; }
+
+body {
+  font: 100% "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+  margin: 0 auto;
+  padding: 0;
+  width: 1170px; }
+
+/* here is a comment for the sake of making a change */
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,20 @@
+/* variables */
+
+$primary-font-stack: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$primary-color: #333;
+
+/* universal settings */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font: 100% $primary-font-stack;
+    color: $primary-color;
+
+    margin: 0 auto;
+    padding: 0;
+    width: 1170px;
+}
+/* here is a comment for the sake of making a change */
