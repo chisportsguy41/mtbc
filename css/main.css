@@ -36,10 +36,10 @@ body {
   color: #3c763d; }
 
 .text-error {
-  color: #8a6d3b; }
+  color: #a94442; }
 
 .text-warning {
-  color: #a94442; }
+  color: #8a6d3b; }
 
 .message, .message-success, .message-error, .message-warning {
   border: 1px solid #ccc;
@@ -52,11 +52,11 @@ body {
   color: #3c763d; }
 
 .message-error {
-  border-color: #8a6d3b;
-  color: #8a6d3b; }
+  border-color: #a94442;
+  color: #a94442; }
 
 .message-warning {
-  border-color: #a94442;
+  border-color: #8a6d3b;
   color: #8a6d3b; }
 
 /*# sourceMappingURL=main.css.map */

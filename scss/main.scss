@@ -32,8 +32,8 @@
 $primary-font-stack: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $primary-color: #333;
 $success-color: #3c763d;
-$error-color: #8a6d3b;
-$warning-color: #a94442;
+$warning-color: #8a6d3b;
+$error-color: #a94442;
 
 /* universal settings */
 
@@ -84,5 +84,5 @@ body {
 .message-warning {
     @extend .message;
     border-color: $warning-color;
-    color: $error-color;
+    color: $warning-color;
 }
