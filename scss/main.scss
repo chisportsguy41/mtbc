@@ -31,6 +31,9 @@
 
 $primary-font-stack: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $primary-color: #333;
+$success-color: #3c763d;
+$error-color: #8a6d3b;
+$warning-color: #a94442;
 
 /* universal settings */
 
@@ -48,15 +51,15 @@ body {
 }
 
 .text-success {
-    color: #3c763d;
+    color: $success-color;
 }
 
 .text-error {
-    color: #8a6d3b;
+    color: $error-color;
 }
 
 .text-warning {
-    color: #a94442;
+    color: $warning-color;
 }
 
 .message {
@@ -68,18 +71,18 @@ body {
 
 .success {
     @extend .message;
-    border-color: #3c763d;
-    color: #3c763d;
+    border-color: $success-color;
+    color: $success-color;
 }
 
 .error {
     @extend .message;
-    border-color: #8a6d3b;
-    color: #8a6d3b;
+    border-color: $error-color;
+    color: $error-color;
 }
 
 .warning {
     @extend .message;
-    border-color: #a94442;
-    color: #a94442;
+    border-color: $warning-color;
+    color: $error-color;
 }
