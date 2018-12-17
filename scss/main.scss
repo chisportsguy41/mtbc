@@ -69,19 +69,19 @@ body {
     color: #333;
 }
 
-.success {
+.message-success {
     @extend .message;
     border-color: $success-color;
     color: $success-color;
 }
 
-.error {
+.message-error {
     @extend .message;
     border-color: $error-color;
     color: $error-color;
 }
 
-.warning {
+.message-warning {
     @extend .message;
     border-color: $warning-color;
     color: $error-color;

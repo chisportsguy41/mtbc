@@ -41,21 +41,21 @@ body {
 .text-warning {
   color: #a94442; }
 
-.message, .success, .error, .warning {
+.message, .message-success, .message-error, .message-warning {
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 10px;
   color: #333; }
 
-.success {
+.message-success {
   border-color: #3c763d;
   color: #3c763d; }
 
-.error {
+.message-error {
   border-color: #8a6d3b;
   color: #8a6d3b; }
 
-.warning {
+.message-warning {
   border-color: #a94442;
   color: #8a6d3b; }
 
