@@ -6,6 +6,7 @@
     <body>
         <script>
         var color = null;
+        var label = null;
         var GET = {};
 
         //parse the GET params out of the URL
@@ -32,18 +33,22 @@
         switch (color) {
         case '#ff0000':
             console.log('The color is red');
+            label = 'red';
             break;
         case '#00ff00':
             console.log('The color is green');
+            label = 'green';
             break;
         case '#0000ff':
             console.log('The color is blue');
+            label = 'blue';
             break;
         default:
             console.log('Sorry, I cannot determine the color');
+            label = 'undefined';
             break;
         }
-
+        document.write(`<div style="color:${color};">The color is ${label}</div>`)
         </script>
     </body>
 </html>
