@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Query Selectors</title>
+    </head>
+    <body>
+        <div id="a">Hello neighbors!</div>
+
+        <p class="a b">It's a beautiful day in the neighborhood</p>
+
+        <blockquote name="a">It's a beautiful day for a neighbor</blockquote>
+        <blockquote name="a">Won't you be mine?</blockquote>
+        <blockquote name="a">Won't you be mine?</blockquote>
+
+        <p class="b">Nope.</p>
+
+        <input name="first_name">
+        <input name="last_name">
+        <script>
+            var elem = document.querySelector('#a');
+            elem.style = 'color: #0000ff';
+
+            var list = document.querySelectorAll('blockquote');
+            list[1].style='font-weight: bold;';
+
+            var list2 = document.querySelectorAll('.b');
+            list2[1].style='color: #ff0000';
+            var list3 = document.querySelectorAll('.a.b');
+            list3[0].style='font-weight: bold; color:' + list2[1].style.color;
+
+            var nameList = document.querySelectorAll("blockquote[name='a']");
+            console.log(nameList);
+            for (let i=0; i<nameList.length; i++){
+                nameList[i].style.color = '#00ff00';
+            }
+
+            var inputs = document.querySelectorAll("input[name='first_name']");
+            inputs[0].style = 'border: 1px solid #0000ff;';
+
+            var inputs2 = document.querySelectorAll("input[name='last_name']");
+            inputs2[0].style = 'border: 1px solid #00ff00;';
+        </script>
+    </body>
+</html>

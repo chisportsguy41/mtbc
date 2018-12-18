@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Events</title>
+    </head>
+    <body>
+            <div id="demo"></div>
+            <button id="time">
+                What Time Is It?
+            </button>
+        <script>
+            function showDate(element) {
+                document.getElementById(element).innerHTML = Date();
+            }
+
+            var btn = document.getElementById("time");
+            btn.addEventListener("click", ()=>{showDate('demo')}, false);
+        </script>
+    </body>
+</html>
