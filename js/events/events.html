@@ -10,11 +10,11 @@
             </button>
         <script>
             function showDate(element) {
-                document.getElementById(element).innerHTML = Date();
+                document.querySelector(element).innerHTML = Date();
             }
 
-            var btn = document.getElementById("time");
-            btn.addEventListener("click", ()=>{showDate('demo')}, false);
+            var btn = document.querySelector('#time');
+            btn.addEventListener("click", ()=>{showDate('#demo')}, false);
         </script>
     </body>
 </html>
