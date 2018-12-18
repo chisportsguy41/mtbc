@@ -12,7 +12,7 @@
             3:'for...of'
         };
 
-        var msg = 'JavaScript supports ' + items.length + ' types of loop.';
+        var msg = 'JavaScript supports ' + Object.keys(items).length + ' types of loop.';
 
         var li = '';
         for(var item in items){
