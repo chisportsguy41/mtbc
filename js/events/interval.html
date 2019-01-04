@@ -7,14 +7,19 @@
                 background: #000000;
                 height: 50px;
                 width: 50px;
+                color: white;
+                text-align: center;
             }
         </style>
     </head>
     <body>
-        <div id="demo"></div>
+        <div id="demo">It's LIT</div>
         <button id="growBtn">Grow</button>
 
         <script>
+            var color = null;
+            var textColor = null;
+            var textSize = null;
             function Grower() {
                 //Get current width of the target element
                 this.width  = document.querySelector('#demo').offsetWidth;
@@ -26,15 +31,20 @@
                 this.timer = setInterval(() => {
                     //Increment the counter
                     this.num++;
+                    color = Math.floor(Math.random()*16777215).toString(16);
+                    textColor = Math.floor(Math.random()*16777215).toString(16);
 
                     //Add one pixel to the width of the target element
-                    document.querySelector('#demo').style = 'width:' + this.num + 'px; color: #' + Math.floor(Math.random()*16777215).toString(16) + '';
+                    document.querySelector('#demo').style = 
+                    'width:' + this.num + 'px; height:' + 
+                    this.num + 'px; background: #' + 
+                    color + '; color: #' + textColor;
 
                     //After fifty iterations, kill the loop.
                     if(this.num === this.width + 50){
                         clearInterval(this.timer);
                     }
-                }, 1);
+                }, 50);
             }
 
             // Function to add event listener to button#time
